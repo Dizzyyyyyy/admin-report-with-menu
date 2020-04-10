@@ -1,0 +1,45 @@
+
+.icon-arrow:before {
+	content: "\e625";
+}
+
+#datalist {
+	margin: auto;
+	padding-right: 1%;
+	position: relative;
+	width: 400px;
+}
+
+#datalist.active #datalist-ul {
+	display: block;
+}
+
+#datalist-ul {
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 99%;
+	max-height: 300px;
+	top: 100%;
+	left: 0;
+	list-style: none;
+	border-radius: 2px;
+	background: #fff;
+	overflow: hidden;
+	overflow-y: auto;
+	z-index: 100;
+}
+
+#datalist-ul li {
+	display: block;
+	text-align: left;
+	padding: 0.8em 1em 0.8em 1em;
+	color: #444;
+	cursor: pointer;
+}
+
+#datalist-ul li:hover {
+	background: #ddd;
+	color: black;
+}

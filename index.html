@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="datalist.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="nui://game/ui/jquery.js"></script>
+	</head>
+	<body>
+		<div class="container">
+            <div class="banner">
+                Report Form
+                <a id="close">&#10060;</a>
+            </div>
+            <div class="row">
+                <div class="inner-container">
+                    <div style="text-align: center;">
+                            <div class="top-info-bar">
+                                <h1>Create a new Player Report</h1>
+                            </div>
+                        <div id="datalist">
+                            <input id="datalist-input" type="text" placeholder="Enter Player ID / Name">
+                            <ul id="datalist-ul"></ul>
+                        </div>
+                        
+                        <textarea id="reason" placeholder="Enter Reason" rows="4"></textarea> <br>
+                        <p style="font-size: 1rem;" id="error"></p>
+                        <button id="submit">Submit</button>
+                        <p>By pressing submit you acknowledge that all data entered is 100% accurate.<br>Submiting false information will lead to punishment.</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <script src="./datalist.js" type="text/javascript"></script>
+        <script src="./main.js" type="text/javascript"></script>
+	</body>
+</html>
